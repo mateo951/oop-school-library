@@ -13,6 +13,7 @@ class Person
 
   def of_age?
     return true if @age >= 18
+
     false
   end
 
@@ -24,8 +25,8 @@ class Person
 
   def check_age?
     of_age?
-  end 
+  end
 end
 
-person1 = Person.new(17)
-puts person1.check_age?
+# person1 = Person.new(17)
+# puts person1.check_age?
