@@ -9,6 +9,19 @@ Built With
 
 - Ruby
 
+### Setup
+
+- To clone this repo:
+  - Open the Terminal(Mac/Linux) or the Cmd (Windows);
+  - Navigate to where you want to paste the Repo folder;
+  - Type `git clone git@github.com:mateo951/oop-school-library.git`;
+  - Open the folder todo-list that was created on your IDE;
+
+### Run
+
+- To run a file type the following in the terminal
+- `ruby filename.rb`
+
 ## Authors
 
 👤 Mateo Villagómez<br>
