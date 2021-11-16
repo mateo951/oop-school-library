@@ -27,6 +27,3 @@ class Person
     of_age?
   end
 end
-
-# person1 = Person.new(17)
-# puts person1.check_age?
