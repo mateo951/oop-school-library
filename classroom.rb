@@ -1,9 +1,14 @@
 class Classroom
   attr_accessor :label
+  attr_reader :students
+
   def initialize(label)
     @label = label
+    @students = []
+  end
+
+  def add_student(student)
+    @students << student
+    student.classroom(self)
   end
 end
-
-classroom1 = Classroom.new("Label test")
-puts classroom1.label
