@@ -1,10 +1,11 @@
 class Rental
   attr_accessor :date
 
-  def initialize(date:)
+  def initialize(date:, person:, book:)
     @date = date
+    @person = person
+    person.rentals << self
+    @book = book
+    book.rentals << self
   end
 end
-
-date1 = Rental.new(date: '01042021')
-puts date1.date
