@@ -1,3 +1,5 @@
+# rubocop:disable Metrics\CyclomaticComplexity, Metrics/MethodLength
+
 require './book'
 require './person'
 require './teacher'
@@ -10,15 +12,17 @@ class Library
     @people = []
     @rentals = []
   end
-  def list_all_books 
-    if @books.empty? 
-      print "No books in library"
+
+  def list_all_books
+    if @books.empty?
+      print 'No books in library'
       return
     end
-    @books.each {
-      |book| print "Title: #{book.title.capitalize}, Author: #{book.author.capitalize}\n"
-    }
+    @books.each do |book|
+      print "Title: #{book.title.capitalize}, Author: #{book.author.capitalize}\n"
+    end
   end
+
   def create_book
     print 'Title: '
     title = gets.chomp.capitalize
@@ -78,7 +82,7 @@ class Library
       nil
     end
   end
-  
+
   def create_rental
     if @people.empty? && @books.empty?
       puts 'Your Library is empty'
@@ -127,7 +131,7 @@ class Library
       print "Date: #{rental.date}, Book \'#{rental.book.title}\' by #{rental.book.author}\n"
     end
   end
-end  
+end
 
 def main
   puts "Library App!\n\n "
@@ -169,3 +173,5 @@ def main
 end
 
 main
+
+# rubocop:enable Metrics\CyclomaticComplexity, Metrics/MethodLength
