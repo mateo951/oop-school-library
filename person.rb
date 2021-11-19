@@ -10,7 +10,7 @@ class Person
     @name = name
     @age = age
     @parent_permission = parent_permission
-    @corrector = Corrector.new1
+    @corrector = Corrector.new
     @rentals = []
   end
 
@@ -18,7 +18,6 @@ class Person
 
   def of_age?
     return true if @age >= 18
-
     false
   end
 
