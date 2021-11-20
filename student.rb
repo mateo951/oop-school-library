@@ -7,7 +7,6 @@ class Student < Person
   def initialize(age:, classroom:, name: 'Unknown', parent_permission: true)
     super(name: name, age: age, parent_permission: parent_permission)
     @classroom = classroom
-    @classroom.add_student(self)
   end
 
   def classroom=(classroom)
@@ -19,10 +18,3 @@ class Student < Person
     "¯\(ツ)/¯"
   end
 end
-
-classroom = Classroom.new('Psychologist 001')
-puts classroom.label
-
-student = Student.new(age: 15, name: 'Mateo', parent_permission: true, classroom: classroom)
-puts student.classroom
-puts student.name

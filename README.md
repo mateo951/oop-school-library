@@ -9,6 +9,8 @@ Built With
 
 - Ruby
 
+![ScreenShot](./media/demo.png?raw=true)
+
 ### Setup
 
 - To clone this repo:
